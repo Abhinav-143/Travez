@@ -1,0 +1,193 @@
+/*body {
+  background-image:url(https://c4.wallpaperflare.com/wallpaper/611/774/370/water-sunset-bridge-nature-wallpaper-preview.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+  
+}*/
+
+
+.wrapper.container.story.info a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+.wrapper.container.story.info a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(20deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s ;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+ 
+  z-index: 300;
+ 
+}
+
+#c1 {
+  
+  left: 100%;
+  z-index: 1;
+}
+
+
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(1px);
+  transition: .5s all ease;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, #eba65b 30%, #d99267 100%);
+}
+
+#i1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+
+
+
+
+
+
+
+
+
+.story {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  height: 45%;
+  width: 100%;
+  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+  z-index: 1;
+}
+
+#s1 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+
+#s2 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+}
+
+
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+.navbar {
+  overflow: hidden;
+  border-radius: 30px;
+  
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+h1 {
+  color: white;
+  position: fixed;
+  top: 0%;
+  left: 35%;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}

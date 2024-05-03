@@ -1,0 +1,443 @@
+<html>
+	<head>
+		<title>Travel.html</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+		<style type="text/css">
+			*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'poppins', sans-serif;
+}
+
+
+
+.footer a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  outline : 1px dashed #333;
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.footer a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  overflow: hidden;
+  margin-top: 2px;
+  
+  margin-left: 230%;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+.body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(bg img.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.heading{
+	width: 80%;
+	text-align: center;
+	color: #fff;
+	height: 100px;
+	
+}
+.heading h1{
+	font-size: 30px;
+
+}
+
+
+
+
+.container{
+  width: 2000px;
+  margin-top: 600px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  justify-content: right;
+  display:flex;
+  align-items: right;
+  margin-bottom:10px;
+  margin-left:10px;
+  padding:2px;
+  min-height: 100vh;
+ 
+}
+
+.container .card{
+
+  padding: 10px;
+}
+.container .card .face{
+  width:250px;
+  height: 150px;
+  transition:.4s;
+}
+.container .card .face.face1{
+  position: relative;
+  display: flex;
+  background-image: url("images/Amaravati_Museum.jpg");
+  background-size:cover;
+  background-position: 72% 35%;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(50px) scale(1);
+}
+.container .card .face.face11{
+  position: relative;
+  display: flex;
+  background-image: url("images/mountains.jpg");
+  background-position: 72% 35%;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(50px);
+}
+.container .card .face.face111{
+  position: relative;
+  display: flex;
+  background-image: url("images/preview.jpg");
+  background-position: 72% 35%;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(50px);
+}
+.face.face1:nth-child(1) {
+  background-image: url(".jpg");
+  background-position: 72% 35%;
+}
+.container .card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+   
+}
+.container .card:hover .face.face11{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+   
+}
+.container .card:hover .face.face111{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+}
+.container .card .face.face1 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+}
+.container .card .face.face11 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+}
+.container .card .face.face111 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+}
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+.container .card:hover .face.face11 .content{
+  opacity: 1;
+}
+.container .card:hover .face.face111 .content{
+  opacity: 1;
+}
+.container .card .face.face1 .content i{
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+.container .card .face.face11 .content h3{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+.container .card .face.face111 .content h3{
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+
+.container .card .face.face1 .content a{
+   transition: .5s;
+}
+
+.container .card .face.face2{
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p, a{
+  font-size: 10pt;
+  margin: 0 ;
+  padding: 0;
+  color:#333;
+}
+.container .card .face.face2 .content a{
+  text-decoration:none;
+  color: black;
+  box-sizing: border-box;
+  
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+.container .card .face.face2 .content a:hover{
+  background: #333 ;
+  color: whitesmoke; 
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+			body{
+	            
+	           
+	            overflow: hidden;
+	            background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("images/bg_img.jpg");
+	            background-repeat: no-repeat;
+	            background-size: cover;
+               }
+               .queries{
+                margin-top: 18%;
+                margin-left: 20px;
+                color-scheme: white;
+
+
+               }
+               .more{
+               	width: 80px;
+               	height: 30px;
+
+               	
+               	border-radius: 30px;
+               }
+               .head{
+
+  				
+  				color:white; font-size: 40px;
+
+               }
+               
+               .boxx{
+               	padding:0px;
+               	margin:0px;
+               }
+               @media(max-width:1231px)
+               {
+
+               	.boxx{
+               		padding:0px;
+               		margin:0px;
+               		display:flex;
+               		flex-direction:column-reverse;
+               		font-size: 1.5rem;
+
+               	}
+               	
+               }
+               
+		</style>
+		
+		<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+		
+	</head>
+	<body>
+		<div class="maincontainer boxx">
+		<table>
+			<th><img src="images/logo-.png" width="100px" height="100px">
+			</th>
+			<th ><h1 class="head"><i>TraveZ</i></h1></th>
+			<th  class="#">
+				<div class="navbar">
+					  <a href="index.html">Home</a>
+					  <a href="Aboutus.html">About us</a>
+					  <a href="contact.html">Contact</a>
+					  <a href="login.html">Login</a>
+				</div>
+			</th>
+		</table>
+		
+		<div class="body">
+			<div class="heading" >
+				<h1 >Travel With Us</h1>
+				<br>
+				<p style="font-family: cursive;"><b>Traveling is a tiring and difficult thing and not everyone is able to travel. But at the same time, it's a fun activity that takes your tiredness away. Travelling adds flavour to life as you travel to different places that have a diffenet  culture and lifestyle.</b> <br></p>
+					<a href="Aboutus.html"><button class="more">More Info</button></a>
+					<a style="margin-left: 40%;"href="video.html"><button class="more">Video</button></a>
+					
+				<div class="queries">
+					
+					<table>
+						
+
+					
+					<th><p style="color:white;">Follow Us</p></th>
+			  		<td><a style="margin-left: 10px;"href="#"><i class="fa fa-envelope" style="font-size:30px;color:white;"></i></a>
+			  		<a style="margin-left: 10px;"href="#"><i class="fa fa-facebook" style="font-size:30px;color:white;"></i></a>
+					<a style="margin-left: 10px;"href="#"><i class="fa fa-twitter" style="font-size:30px;color:white;"></i></td></a>
+					<td><p style="color:white; word-spacing:50px; margin-left: 20px;">@Fusion</p></td>
+
+					
+					</table>
+					
+		 		</div>
+		 		
+		 		
+			</div>
+
+
+
+			
+			<div class="container" >
+			     <div class="card" >
+			       <div class="face face1">
+			         <div class="content">
+			                        
+			           <h3>Sculptures</h3>
+			         </div>
+			       </div>
+
+			       <div class="face face2" >
+			         <div class="content">
+			           <p> Exploring these architectural marvels and scriptures in Andhra Pradesh provides a glimpse into the state's rich cultural heritage and religious diversity. </p>
+			           <a href="clone.html" type="button">See More</a>
+			         </div>
+			       </div>
+				    </div>
+				    <div class="card">
+				       <div class="face face11">
+				         <div class="content">
+				                  
+				    <h3>Beaches</h3>
+				    </div>
+				       </div>
+				       <div class="face face2">
+				         <div class="content">
+				           <p> When visiting these beaches and waterfalls, it's essential to follow responsible tourism practices, respect the environment. </p>
+				           <a href="Beach1.html" type="button">See More</a>
+				         </div>
+				       </div>
+				    </div>
+				    
+				    <div class="card">
+			       <div class="face face111">
+			         <div class="content">
+			           
+			            <h3>Parks</h3>
+			         </div>
+			       </div>
+			       <div class="face face2">
+			         <div class="content">
+			           <p> Andhra Pradesh boasts an array of parks and resorts, offering serene natural surroundings and modern amenities for leisure and relaxation </p>
+			           <a href="myweb.html" type="button">See More</a>
+			         </div>
+			       </div>
+			    </div>
+			  </div>
+			
+					
+				
+		</div>	
+			
+			</div>		
+	</body>
+</html>
