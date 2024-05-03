@@ -19,12 +19,16 @@ Contact Us: Have any doubts or need assistance? Use the contact page to reach ou
 Frontend: HTML, CSS, JavaScript
 Backend: Java, JDBC, Servlets, JSP
 Database: SQL (MySQL, etc.)
+Server: Apache Tomcat
 
 **About Us**
 
 Travez is developed by a team of passionate developers dedicated to promoting tourism in Andhra Pradesh. Our mission is to provide travelers with the necessary information and resources to explore the rich landscapes and historical landmarks of the region.
 
 **Contributions**
+
 We welcome contributions from fellow developers to improve Travez and make it an even better resource for tourists. Feel free to fork the repository, submit pull requests, or open issues for any bugs or feature requests.
 
 Thank you for choosing Travez as your travel companion for exploring Andhra Pradesh. Happy traveling! 🌍✈️
+
+
