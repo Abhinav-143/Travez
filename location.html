@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearby Destinations</title>
+  <link rel="stylesheet" href="loc.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Find Nearby Destinations</h1>
+      <p>Enter your city and radius to discover amazing places near you!</p>
+    </header>
+    <div class="form-group">
+      <label for="city">Enter City:</label>
+      <input type="text" id="city" placeholder="e.g. Vijayawada, Visakhapatnam">
+    </div>
+    <div class="form-group">
+      <label for="radius">Enter Radius (in km):</label>
+      <input type="number" id="radius" placeholder="e.g. 50">
+    </div>
+    <button id="find-btn">Find Nearby Destinations</button>
+    <ul id="destination-list"></ul>
+  </div>
+
+  <script src="loca.js"></script>
+</body>
+</html>
